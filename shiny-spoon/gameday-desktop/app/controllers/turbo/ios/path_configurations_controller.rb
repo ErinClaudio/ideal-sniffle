@@ -7,12 +7,17 @@ module Turbo
             {
               "patterns": [
                 "/new$",
-                "/edit$",
-                "/sign_in",
-                "/sign_up"
+                "/edit$"
               ],
               "properties": {
                 "context": "modal"
+              }
+            },{
+              "patterns": [
+                "^/users/edit$"
+              ],
+              "properties": {
+                "context": "default"
               }
             }
           ]
